@@ -1,0 +1,46 @@
+<html>
+    <head>
+            <title>
+                    Demo chat
+            </title>
+            <meta charset="utf-8" >
+
+           
+            
+              <!--goi dien len server-->
+            <script src="jquery.js"></script>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="xuli.js"></script>
+           <link rel="stylesheet" type="text/css" href="layout.css" />
+    </head>
+    <body>
+           <div id="toanbo">
+                <div id="loginForm">
+                        <h3> Tên Bạn là gì?</h3>
+                        <input type="text" id="txtusername"/>
+                        <input type="button" value="Register" id="btnRegister">
+                </div>
+                <div id="chatForm">
+                    <div id="left">
+                        <div id="boxtitle">User Online</div>
+                        <div id="boxContent"></div>
+                        
+                    </div>
+                    <div id="right">
+                        <div id="sayhi">hello <span id="currentUser">Minh</span>
+                        
+                        <input type="button" id="btnLogout" value="Logout">
+                        </div>
+                        <div id="listMess">
+
+                        </div>
+                        <div id="thongbao"></div>
+                        <input type="text" id="txtMess" />
+                        <input type="button" id="btnSendMess" value="Send" />
+
+                    </div>
+                </div>
+           </div>
+    </body>
+
+</html>
